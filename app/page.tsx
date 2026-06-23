@@ -41,17 +41,41 @@ export default function Home() {
 
       <section className="mx-auto grid max-w-7xl gap-6 px-6 pb-24 md:grid-cols-3">
         {[
-          "Job Management",
-          "Field Teams",
-          "Photos & Documentation",
-          "Estimates & Invoices",
-          "Online Payments",
-          "Team Communication",
+          {
+            title: "Job Management",
+            description:
+              "Create, assign, track, and complete jobs from one centralized workspace.",
+          },
+          {
+            title: "Field Teams",
+            description:
+              "Keep technicians, vendors, and project managers connected in real time.",
+          },
+          {
+            title: "Photos & Documentation",
+            description:
+              "Organize job photos, notes, attachments, and records without digging through texts.",
+          },
+          {
+            title: "Estimates & Invoices",
+            description:
+              "Build professional estimates and invoices without leaving your workflow.",
+          },
+          {
+            title: "Online Payments",
+            description:
+              "Accept customer payments and keep invoice balances updated automatically.",
+          },
+          {
+            title: "Team Communication",
+            description:
+              "Reduce phone calls with built-in messaging, notifications, and job updates.",
+          },
         ].map((feature) => (
-          <div key={feature} className="rounded-3xl border border-slate-200 p-6 shadow-sm">
-            <h3 className="text-lg font-bold text-slate-900">{feature}</h3>
+          <div key={feature.title} className="rounded-3xl border border-slate-200 p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-slate-900">{feature.title}</h3>
             <p className="mt-2 text-sm leading-6 text-slate-600">
-              Manage your operations faster and keep everyone aligned from start to finish.
+              {feature.description}
             </p>
           </div>
         ))}
