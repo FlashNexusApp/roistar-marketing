@@ -9,7 +9,7 @@ export default function Home() {
             <a href="https://roistar.app" className="text-sm font-medium text-slate-600 hover:text-slate-900">
               Login
             </a>
-            <a href="https://roistar.app/signup" className="rounded-xl bg-sky-600 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-700">
+            <a href="/signup" className="rounded-xl bg-sky-600 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-700">
               Start Free Trial
             </a>
           </div>
@@ -30,7 +30,7 @@ export default function Home() {
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-          <a href="https://roistar.app/signup" className="rounded-2xl bg-sky-600 px-8 py-4 font-semibold text-white hover:bg-sky-700">
+          <a href="/signup" className="rounded-2xl bg-sky-600 px-8 py-4 font-semibold text-white hover:bg-sky-700">
             Start Free Trial
           </a>
           <a href="https://roistar.app" className="rounded-2xl border border-slate-300 px-8 py-4 font-semibold text-slate-700 hover:bg-slate-50">
